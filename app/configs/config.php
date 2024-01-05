@@ -7,5 +7,5 @@ define("DB_PORT", 3309);
 define("DEFAULT_CONTROLLER", "HomeController");
 define("DEFAULT_METHOD", "get");
 define("DEFAULT_PARAMS", ['']);
-define("URL_ROOT", 'http://localhost/lab1/');
-define("ASSETS_URL_ROOT", 'http://localhost/lab1/');
+define("URL_ROOT", 'http://localhost/lab1');
+define("ASSETS_URL_ROOT", 'http://localhost/lab1');

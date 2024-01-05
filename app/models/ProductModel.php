@@ -139,7 +139,27 @@ class ProductModel extends Database
     }
     public function getFirst8Products()
     {
-        $sql  = "SELECT * FROM product  ORDER BY RAND()  LIMIT 8 ";
+        $sql  = "SELECT * FROM product  where new = '1' ORDER BY id desc LIMIT 8 ";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function getmostviewProducts()
+    {
+        $sql  = "SELECT * FROM product  ORDER BY view desc  LIMIT 5 ";
+        $result = $this->select($sql);
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+    public function getsaleProducts()
+    {
+        $sql  = "SELECT * FROM product where hot ='1'    LIMIT 7 ";
         $result = $this->select($sql);
         if ($result) {
             return $result;
