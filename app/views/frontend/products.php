@@ -11,7 +11,7 @@ if (isset($p_data)) {
 <br>
 <?php echo $p_assoc['name'] ?>
 <?php echo $p_assoc['price'] ?>
-<?php echo $p_assoc['old_price'] ?>
+<?php echo $p_assoc['view'] ?>
 <br>
 <?php
     }
